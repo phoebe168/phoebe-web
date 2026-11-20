@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>服務流程 - 非比營養諮詢中心</title>
+<meta name="description" content="從加 LINE 到追蹤調整，個人諮詢與講座合作的進行方式。">
+<meta property="og:title" content="服務流程 - 非比營養諮詢中心">
+<meta property="og:description" content="從加 LINE 到追蹤調整，個人諮詢與講座合作的進行方式。">
+<meta property="og:image" content="assets/logo.png">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Huninn&family=Noto+Sans+TC:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="page-process">
+<a class="skip" href="#main">跳到主要內容</a>
+<header class="site-head">
+  <div class="wrap head-row">
+    <a class="brand" href="index.html" aria-label="非比營養諮詢中心 首頁">
+      <img src="assets/logo.png" alt="非比營養諮詢中心 Phoebe Nutrition Counseling Center" width="77" height="64">
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">選單</button>
+    <nav id="site-nav" class="site-nav" aria-label="主選單">
+      <a href="about.html">關於非比</a>
+      <a href="team.html">營養師團隊</a>
+      <a href="services.html">服務內容</a>
+      <a href="process.html" aria-current="page">服務流程</a>
+      <a href="cases.html">實績案例</a>
+      <a href="https://www.facebook.com/profile.php?id=100086501402852" class="fb">臉書</a>
+      <a href="contact.html" class="cta">立即預約</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="page-head">
+  <div class="wrap">
+    <h1>服務流程</h1>
+    <p class="lead">個人諮詢和講座合作，進行方式不太一樣。</p>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <h2>個人營養諮詢</h2>
+    <ol class="steps steps-long">
+      <li><h3>加 LINE 說明需求</h3><p>告訴我們想諮詢的事情，例如長輩吃不下、術後怎麼補、想減重。</p></li>
+      <li><h3>安排初次評估</h3><p>約定時間，營養師了解飲食習慣、身體狀況、生活作息和照顧情形。</p></li>
+      <li><h3>規劃專屬方案</h3><p>依評估結果，提出具體可行的飲食建議和備餐方法。</p></li>
+      <li><h3>追蹤與調整</h3><p>定期回顧執行情形，視身體變化修正方案。</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="band band-sage">
+  <div class="wrap">
+    <h2>講座與機構合作</h2>
+    <ol class="steps steps-long">
+      <li><h3>來信或 LINE 洽詢</h3><p>提供講座主題、對象、人數、日期與地點。</p></li>
+      <li><h3>確認內容與報價</h3><p>依對象調整內容與實作方式，確認後安排檔期。</p></li>
+      <li><h3>執行與回饋</h3><p>活動結束後整理回饋，作為下次合作的參考。</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap cta-row">
+    <p>第一步很簡單，先加 LINE。</p>
+    <a class="btn btn-light" href="https://line.me/R/ti/p/@480orlug">加 LINE 好友</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <img src="assets/logo.png" alt="非比營養諮詢中心 Phoebe Nutrition Counseling Center" width="200" height="166">
+    </div>
+    <div class="foot-contact">
+      <h2>聯絡我們</h2>
+      <dl>
+        <dt>LINE</dt><dd><a href="https://line.me/R/ti/p/@480orlug">@480orlug</a></dd>
+        <dt>電話</dt><dd><a href="tel:035555878">03-555-5878</a></dd>
+        <dt>信箱</dt><dd><a href="mailto:phoebe143933@gmail.com">phoebe143933@gmail.com</a></dd>
+        <dt>地址</dt><dd>新竹縣竹北市</dd>
+        <dt>服務區域</dt><dd>新竹縣市、苗栗、桃園、台北、新北、基隆</dd>
+      </dl>
+      <p><a href="https://www.facebook.com/profile.php?id=100086501402852">非比營養諮詢中心臉書粉絲專頁</a></p>
+    </div>
+    <div class="foot-line">
+      <img src="assets/line-qr.png" alt="LINE 好友 QR code，ID @480orlug" width="132" height="132">
+      <p>手機掃描，加入 LINE 好友</p>
+    </div>
+  </div>
+  <p class="wrap copy">© 2026 非比營養諮詢中心</p>
+</footer>
+
+<script>
+(function(){
+  var b=document.querySelector('.nav-toggle'),n=document.getElementById('site-nav');
+  b.addEventListener('click',function(){
+    var o=b.getAttribute('aria-expanded')==='true';
+    b.setAttribute('aria-expanded',String(!o));
+    n.classList.toggle('open',!o);
+    b.textContent=o?'選單':'關閉';
+  });
+})();
+</script>
+</body>
+</html>

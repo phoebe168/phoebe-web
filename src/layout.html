@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{title}}</title>
+<meta name="description" content="{{description}}">
+<meta property="og:title" content="{{title}}">
+<meta property="og:description" content="{{description}}">
+<meta property="og:image" content="assets/logo.png">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Huninn&family=Noto+Sans+TC:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="page-{{slug}}">
+<a class="skip" href="#main">跳到主要內容</a>
+<header class="site-head">
+  <div class="wrap head-row">
+    <a class="brand" href="index.html" aria-label="非比營養諮詢中心 首頁">
+      <img src="assets/logo.png" alt="非比營養諮詢中心 Phoebe Nutrition Counseling Center" width="77" height="64">
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">選單</button>
+    <nav id="site-nav" class="site-nav" aria-label="主選單">
+      {{nav}}
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+{{body}}
+</main>
+
+<footer class="site-foot">
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <img src="assets/logo.png" alt="非比營養諮詢中心 Phoebe Nutrition Counseling Center" width="200" height="166">
+    </div>
+    <div class="foot-contact">
+      <h2>聯絡我們</h2>
+      <dl>
+        <dt>LINE</dt><dd><a href="{{line_url}}">@480orlug</a></dd>
+        <dt>電話</dt><dd><a href="tel:035555878">03-555-5878</a></dd>
+        <dt>信箱</dt><dd><a href="mailto:phoebe143933@gmail.com">phoebe143933@gmail.com</a></dd>
+        <dt>地址</dt><dd>新竹縣竹北市</dd>
+        <dt>服務區域</dt><dd>新竹縣市、苗栗、桃園、台北、新北、基隆</dd>
+      </dl>
+      <p><a href="{{fb_url}}">非比營養諮詢中心臉書粉絲專頁</a></p>
+    </div>
+    <div class="foot-line">
+      <img src="assets/line-qr.png" alt="LINE 好友 QR code，ID @480orlug" width="132" height="132">
+      <p>手機掃描，加入 LINE 好友</p>
+    </div>
+  </div>
+  <p class="wrap copy">© {{year}} 非比營養諮詢中心</p>
+</footer>
+
+<script>
+(function(){
+  var b=document.querySelector('.nav-toggle'),n=document.getElementById('site-nav');
+  b.addEventListener('click',function(){
+    var o=b.getAttribute('aria-expanded')==='true';
+    b.setAttribute('aria-expanded',String(!o));
+    n.classList.toggle('open',!o);
+    b.textContent=o?'選單':'關閉';
+  });
+})();
+</script>
+</body>
+</html>
