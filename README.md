@@ -28,12 +28,14 @@
 3. repo 的 Settings > Pages：Source 選 Deploy from a branch，Branch 選 `main`、資料夾選 `/docs`
 4. 幾分鐘後網址為 https://phoebe168.github.io/phoebe-web/
 
-## 綁定 PC Home 網址（買好之後）
-1. 在 `docs/` 新增檔案 `CNAME`，內容只有一行網址，例如 `www.phoebe-xxx.com.tw`
-2. PC Home DNS 設定：
-   - 主網域 A 紀錄指向：185.199.108.153、185.199.109.153、185.199.110.153、185.199.111.153
-   - `www` 的 CNAME 指向：`phoebe168.github.io`
-3. repo 的 Settings > Pages > Custom domain 填同一個網址，等憑證好了勾選 Enforce HTTPS
+## 網址
+- 主網址：https://phoebecare.tw（`docs/CNAME` 內容即此網址）
+- www.phoebecare.tw 由 GitHub 自動導到主網址
+- phoebecare.com.tw 轉址到 https://phoebecare.tw
+- PChome DNS（phoebecare.tw）：
+  - A 紀錄（主機留空）：185.199.108.153、185.199.109.153、185.199.110.153、185.199.111.153
+  - CNAME：www 指向 phoebe168.github.io
+- GitHub repo Settings > Pages > Custom domain 填 phoebecare.tw，勾選 Enforce HTTPS
 
 ## 待補資料
 - 營養師姓名、職稱、專長、照片（`src/pages/team.html`，照片放 `docs/assets/team/`）
