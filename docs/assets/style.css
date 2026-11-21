@@ -215,3 +215,6 @@ p { margin: 0 0 1em; }
 .case-video { aspect-ratio: 4 / 3; border-radius: 10px; background: var(--sage); display: grid; place-items: center; text-align: center; padding: 16px; }
 .case-video a { font-weight: 500; }
 @media (max-width: 640px) { .cases li { grid-template-columns: 1fr; gap: 14px; } }
+.avatar .initial { font-family: var(--round); font-size: 56px; color: var(--green); opacity: 1; }
+.team p { text-align: left; }
+.team .award { color: var(--brown); font-size: 14px; border-top: 1px solid var(--sage-line); padding-top: 8px; }
