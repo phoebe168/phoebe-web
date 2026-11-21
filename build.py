@@ -13,7 +13,7 @@ ROOT = Path(__file__).parent
 SRC = ROOT / "src"
 OUT = ROOT / "docs"
 
-LINE_URL = "https://line.me/R/ti/p/@480orlug"
+LINE_URL = "https://line.me/R/ti/p/@phoebecare"
 FB_URL = "https://www.facebook.com/profile.php?id=100086501402852"
 
 # slug, 選單名稱, 頁面標題, 頁面描述（搜尋結果顯示用）
