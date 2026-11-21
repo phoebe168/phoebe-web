@@ -4,6 +4,7 @@
 讀取 src/layout.html 與 src/pages/*.html，產生 docs/*.html（GitHub Pages 從 docs/ 發布）。
 共用的頁首、頁尾只改 src/layout.html 一處即可。
 """
+import hashlib
 import math
 from datetime import date
 from pathlib import Path
@@ -95,6 +96,9 @@ def nav_html(current):
 
 def main():
     layout = (SRC / "layout.html").read_text(encoding="utf-8")
+    # 樣式檔加版本號：style.css 內容一改，網址就變，手機不會再用舊的快取
+    css_ver = hashlib.md5((OUT / "assets" / "style.css").read_bytes()).hexdigest()[:8]
+    layout = layout.replace('href="assets/style.css"', f'href="assets/style.css?v={css_ver}"')
     for slug, _, title, desc in PAGES:
         body = (SRC / "pages" / f"{slug}.html").read_text(encoding="utf-8")
         body = (body.replace("{{plate}}", plate_svg())
