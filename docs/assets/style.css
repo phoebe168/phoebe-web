@@ -218,3 +218,17 @@ p { margin: 0 0 1em; }
 .avatar .initial { font-family: var(--round); font-size: 56px; color: var(--green); opacity: 1; }
 .team p { text-align: left; }
 .team .award { color: var(--brown); font-size: 14px; border-top: 1px solid var(--sage-line); padding-top: 8px; }
+.team-group { font-size: 24px; margin: 8px 0 24px; padding-left: 14px; border-left: 5px solid var(--green); }
+.team + .team-group { margin-top: 56px; }
+.team { align-items: start; }
+.team h2 small { font-size: 16px; color: var(--brown); font-family: var(--sans); }
+.team h3 { font-family: var(--sans); font-weight: 700; font-size: 15px; color: var(--brown); text-align: left; margin: 14px 0 4px; }
+.team ul { list-style: disc; text-align: left; margin: 0; padding-left: 1.2em; font-size: 15px; color: var(--muted); line-height: 1.7; }
+.avatar img { width: 100%; height: 100%; object-fit: cover; opacity: 1; }
+.team { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+.team ul li { text-align: left; }
+.team .award { text-align: left; }
+.team .role-line { text-align: center; color: var(--brown); font-size: 15px; margin: -4px 0 0; }
+.partners { list-style: none; padding: 0; margin: 20px 0 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
+.partners li { background: var(--white); border-radius: 10px; padding: 14px 18px; border-left: 4px solid var(--green); }
+.svc ul { columns: 1; }
