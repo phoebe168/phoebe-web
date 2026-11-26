@@ -111,7 +111,7 @@ def dietitian_cards(team):
         title = E(d["title"])
         out.append(f"""      <li>
         <a class="d-card" href="team-{d['slug']}.html">
-          <img src="assets/photos/team/{d['slug']}.jpg" alt="{E(d['name'])} {E(d['role'])}" width="400" height="400" loading="lazy">
+          <img src="assets/photos/team/{d['slug']}-avatar.jpg" alt="{E(d['name'])} {E(d['role'])}" width="400" height="400" loading="lazy">
           <span class="d-body">
             <strong>{E(d['name'])}</strong>
             <span class="d-title">{title}</span>
